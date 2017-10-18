@@ -16,7 +16,7 @@ public class StringAnalise {
 		int digitNumber = 0;
 		int letterNumber = 0;
 		int spaceNumber = 0;
-		int anotherSymbol = 0;
+		int anotherSymbol;
 
 		for(int i=0; i<string.length(); i++) {
 
@@ -30,7 +30,7 @@ public class StringAnalise {
 
 				letterNumber++;
 			}
-			else (Character.isSpaceChar(string.charAt(i))) {
+			else if(Character.isSpaceChar(string.charAt(i))) {
 
 				spaceNumber++;
 			}       
